@@ -134,7 +134,7 @@ Node find_min(Node *&root) {
     else {
         auto l = root->getLeftPointer();
         auto min=find_min(l);
-        return min; //this return happens using move constructor .!Phew!
+        return min; //this return happens using move constructor .!Phew! //fixed by my copy constructor
     }
 };
 
